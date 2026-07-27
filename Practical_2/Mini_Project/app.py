@@ -13,7 +13,7 @@ import torch
 
 from model import Perceptron
 
-MODEL_PATH = "perceptron_model.pth"
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "perceptron_model.pth")
 
 st.set_page_config(page_title="Binary Pattern Classifier", page_icon="🔲")
 
